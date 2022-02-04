@@ -1,0 +1,34 @@
+atividade povoamento bd_gestao partidos
+
+INSERT INTO camara	(cd_camara, nm_municipio)
+	VALUES(1, 'Blumenau');
+INSERT INTO camara	(cd_camara, nm_municipio)
+	VALUES(2, 'Gaspar');
+INSERT INTO camara	(cd_camara, nm_municipio)
+	VALUES(3, 'Timbó');
+INSERT INTO camara	(cd_camara, nm_municipio)
+	VALUES(4, 'Indaial');
+INSERT INTO camara	(cd_camara, nm_municipio)
+	VALUES(5, 'Curitiba');
+  
+INSERT INTO partido	(nr_partido, sg_partido, nm_partido, cd_camara)
+	VALUES(13, 'PT', 'Partido dos Trabalhadores', 1);
+INSERT INTO partido	(nr_partido, sg_partido, nm_partido, cd_camara)
+	VALUES(17, 'PSL', 'Partido Social Liberal', 1);
+INSERT INTO partido	(nr_partido, sg_partido, nm_partido, cd_camara)
+	VALUES(50, 'PSOL', 'Partido Socialismo e Liberdade', 1);
+INSERT INTO partido	(nr_partido, sg_partido, nm_partido, cd_camara)
+	VALUES(14, 'PTB', 'Partido Trabalhista Brasileiro', 1);
+  
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(101, 'Beto das Trufas', 110, 109, 13);
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(102, 'DJ Luciano Almeida', 15, 10, 13);
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(103, 'André Marques', 3, 1, 17);
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(104, 'Contente', 22, 14, 50);
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(105, 'Tony Tigrão', 6, 2, 14);
+INSERT INTO vereador	(cd_vereador, nm_vereador, qt_proj_apresentados, qt_proj_aprovados, nr_partido)
+	VALUES(106, 'Paulo Jesus', 33, 33, 50);
